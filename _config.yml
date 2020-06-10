@@ -9,16 +9,16 @@ disqus_shortname:
 description: We build games.
 
 # Author details for the jekyll-seo-tag gem
-#author: IronCorn
- # name: "Ironcorn"
-  #email: ironcorndev@gmail.com
-  #twitter: # twitter username without the @ symbol
+author: IronCorn
+  name: "Ironcorn"
+  email: ironcorndev@gmail.com
+  twitter: # twitter username without the @ symbol
 
 # Social details for the jekyll-seo-tag gem
 social:
   name: IronCorn
   links:
-    - https://instagram.com/ironcorn
+    - 
 
 timezone: GMT+3
 
