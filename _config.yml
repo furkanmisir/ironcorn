@@ -3,7 +3,7 @@ title: IronCorn
 email: youremailaddress@gmail.com
 description: We believe that games are a window to our imagination and a path to times filled with joy. We use our work to prove so.
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "ironcorn.tech" # the base hostname & protocol for your site
+url: "https://ironcorn.tech" # the base hostname & protocol for your site
 
 # Social settings
 500px_url:
