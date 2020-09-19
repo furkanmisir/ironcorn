@@ -1,78 +1,107 @@
-# Urban
+# Eventually - Jekyll Theme
 
-Web Agency themed business template for Jekyll. Browse through a [live demo](https://teal-worm.cloudvent.net/).
-Increase the web presence of your agency with this configurable theme.
+A Jekyll version of the "Eventually" theme by [HTML5 UP](https://html5up.net/).
 
-![Urban template screenshot](images/_screenshot.png)
+![Eventually Theme](assets/images/eventually.jpg "Eventually Theme")
 
-Urban was made by [CloudCannon](https://cloudcannon.com/), the Cloud CMS for Jekyll.
+# How to Use
 
-Find more templates, themes and step-by-step Jekyll tutorials at [CloudCannon Academy](https://learn.cloudcannon.com/).
+For those unfamiliar with how Jekyll works, check out [https://jekyllrb.com/](https://jekyllrb.com/) for all the details,
+or read up on just the basics of [front matter](https://jekyllrb.com/docs/frontmatter/), [writing posts](https://jekyllrb.com/docs/posts/),
+and [creating pages](https://jekyllrb.com/docs/pages/).
 
-## Features
+- **GitLab**: Simply fork this repository and start editing the `_config.yml` file!  
+- **GitHub**: Fork this reposity and create a branch named `gh-pages`, then start editing the `_config.yml` file!
 
-* Contact form
-* Pre-built pages
-* Pre-styled components
-* Blog with pagination
-* Post category pages
-* Disqus comments for posts
-* Staff and author system
-* Configurable footer
-* Optimised for editing in [CloudCannon](https://cloudcannon.com/)
-* RSS/Atom feed
-* SEO tags
-* Google Analytics
+# Added Features
 
-## Setup
+* Add your **social profiles** easily in `_config.yml`. Only social profiles buttons you enter in `config.yml` show up on the site footer!
+* **Automatic sitemap generation** via the [Jekyll Sitemap Generator](https://github.com/jekyll/jekyll-sitemap) plugin.
+* **Automatic SEO** via the [Jekyll SEO Tag](https://github.com/jekyll/jekyll-seo-tag) plugin.
 
-1. Add your site and author details in `_config.yml`.
-2. Add your Google Analytics and Disqus keys to `_config.yml`.
-3. Get a workflow going to see your site's output (with [CloudCannon](https://app.cloudcannon.com/) or Jekyll locally).
+# Issues
 
-## Develop
+If you would like to report a bug, ask a question, request a feature, feel free to do so on [the GitLab repository](https://gitlab.com/andrewbanchich/eventually-jekyll-theme) and I will be more than happy to help!
 
-Urban was built with [Jekyll](https://jekyllrb.com/) version 3.3.1, but should support newer versions as well.
+Alternatively, you can open an issue via email by emailing [incoming+andrewbanchich/eventually-jekyll-theme@incoming.gitlab.com](mailto:incoming+andrewbanchich/eventually-jekyll-theme@incoming.gitlab.com).
 
-Install the dependencies with [Bundler](https://bundler.io/):
+The GitHub repository is simply a mirror of the GitLab repository.
 
-~~~bash
-$ bundle install
-~~~
+# Credits
 
-Run `jekyll` commands through Bundler to ensure you're using the right versions:
+Original README from HTML5 UP:
 
-~~~bash
-$ bundle exec jekyll serve
-~~~
+```
+Eventually by HTML5 UP
+html5up.net | @ajlkn
+Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 
-## Editing
 
-Urban is already optimised for adding, updating and removing pages, staff, advice, company details and footer elements in [CloudCannon](https://app.cloudcannon.com/).
+Just a simple placeholder template for your kickass app/product/startup/whatever until it
+launches. Includes an email signup form and a cool slideshow background (more on both below).
 
-### Posts
+Demo images* courtesy of Unsplash, a radtastic collection of CC0 (public domain) images
+you can use for pretty much whatever.
 
-* Add, update or remove a post in the *Posts* collection.
-* The **Staff Author** field links to members in the **Staff** collection.
-* Documentation pages are organised in the navigation by category, with URLs based on the path inside the `_docs` folder.
-* Change the defaults when new posts are created in `_posts/_defaults.md`.
+(* = not included)
 
-### Contact Form
+AJ
+aj@lkn.io | @ajlkn
 
-* Preconfigured to work with [CloudCannon](https://app.cloudcannon.com/), but easily changed to another provider (e.g. [FormSpree](https://formspree.io/)).
-* Sends email to the address listed in company details.
 
-### Staff
+Signup Form:
 
-* Reused around the site to save multiple editing locations.
-* Add `excluded_in_search: true` to any documentation page's front matter to exclude that page in the search results.
+	The signup form won't actually do anything (other than report back with a "thank you" message)
+	until you tie it to either a third party service (eg. MailChimp) or your own hosted solution.
+	In either case, there are two ways to go:
 
-### Footer
+	1. The conventional (non-AJAX) way, which pretty much comes down to pointing the form's "action"
+	attribute to your service/script URL. If you go this route, remove the entire "Signup Form" code
+	block from assets/js/main.js (since it's not needed for this approach).
 
-* Exposed as a data file to give clients better access.
-* Set in the *Data* / *Footer* section.
+	-or-
 
-### Company details
+	2. The AJAX way. How you set this up is largely dependent on the service/solution you're using
+	so you'll need to consult their/its documentation. However, I have included some basic code
+	(under "Signup Form" in assets/js/main.js) that will at least let you interact with the
+	form itself.
 
-* Reused around the site to save multiple editing locations.
-* Set in the *Data* / *Company* section.
+
+Slideshow Background:
+
+	This is pretty straightforward, but there are two JS settings you'll want to be aware of
+	(found under "Slideshow Background" in assets/js/main.js):
+
+	images
+
+		The list of images to cycle through, given in the following format:
+
+			'url': 'alignment'
+
+		Where 'url' is the image (eg. 'assets/images/foo.jpg', 'http://somewhere.else/foo.jpg'), and
+		'alignment' is how the image should be vertically aligned ('top', 'center', or 'bottom').
+
+		Note: Browsers that don't support CSS transitions (like IE<=9) will only see the first image.
+
+	delay
+
+		How long to wait between transitions (in ms). Note that this must be at least twice as long as
+		the transition speed itself (currently 3 seconds).
+
+
+Credits:
+
+	Demo Images:
+		Unsplash (unsplash.com)
+
+	Icons:
+		Font Awesome (fortawesome.github.com/Font-Awesome)
+
+	Other:
+		html5shiv.js (@afarkas @jdalton @jon_neal @rem)
+		Respond.js (j.mp/respondjs)
+		Skel (skel.io)
+
+```
+
+Repository [Jekyll logo](https://github.com/jekyll/brand) icon licensed under a [Creative Commons Attribution 4.0 International License](http://choosealicense.com/licenses/cc-by-4.0/).

@@ -1,100 +1,21 @@
+# Site settings
 title: IronCorn
-url: "https://ironcorn.tech"
-baseurl:
-google_analytics_key:
-google_maps_javascript_api_key: AIzaSyDXrjJxNCb0ACJd4FQJBVuRhVhw-vx9ieI
-disqus_shortname:
+email: youremailaddress@gmail.com
+description: We believe that games are a window to our imagination and a path to times filled with joy. We use our work to prove so.
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "" # the base hostname & protocol for your site
 
-# Default description in social shares for the jekyll-seo-tag gem
-description: We build games.
+# Social settings
+500px_url:
+facebook_url:
+github_url:
+gitlab_url: 
+googleplus_url: 
+instagram_url:
+linkedin_url: https://www.linkedin.com/in/andrew-banchich-a4ba1195
+pinterest_url:
+slack_url:
+twitter_url: 
 
-# Author details for the jekyll-seo-tag gem
-author:
-  name:
-  email:
-  twitter: # twitter username without the @ symbol
-
-# Social details for the jekyll-seo-tag gem
-social:
-  name: IronCorn
-  links:
-    - 
-
-timezone: GMT+3
-
-collections:
-  staff_members:
-    output: false
-  clients:
-    output: true
-
-paginate: 10
-paginate_path: "/blog/:num/"
-permalink: pretty
-
-jekyll-archives:
-  enabled:
-    - "categories"
-
-plugins:
-  - "jekyll-feed"
-  - "jekyll-seo-tag"
-  - "jekyll-paginate"
-  - "jekyll-archives"
-
-exclude:
-  - Gemfile
-  - Gemfile.lock
-  - README.md
-  - LICENCE
-
-defaults:
-  - scope:
-      path: ""
-      type: "posts"
-    values:
-      layout: "post"
-      _options:
-        content:
-          width: 960
-          height: 2000
-  - scope:
-      path: ""
-      type: "clients"
-    values:
-      layout: "client"
-      _options:
-        image_path:
-          width: 2000
-          height: 2000
-  - scope:
-      path: ""
-      type: "staff_members"
-    values:
-      _options:
-        image_path:
-          width: 600
-          height: 600
-  - scope:
-      path: ""
-      type: "pages"
-    values:
-      layout: "page"
-  - scope:
-      path: "index.html"
-      type: "pages"
-    values:
-      layout: "default"
-
-# -----------
-# CloudCannon
-
-social_icons:
-  - Facebook
-  - Instagram
-  - LinkedIn
-  - Pinterest
-  - Tumblr
-  - Twitter
-  - YouTube
-  - RSS
+# Build settings
+markdown: kramdown
